@@ -7,6 +7,7 @@ import (
 	"os"
 	"strconv"
 	"strings"
+	"time"
 )
 
 
@@ -22,7 +23,7 @@ func main() {
 	}
 
 	var ports []string
-
+	flag := 0
 	if strings.Contains(os.Args[1],","){
 		tmp_port0 := strings.Split(os.Args[1],",")
 		for _,v := range tmp_port0 {
@@ -59,7 +60,9 @@ func main() {
 
 			defer netListen.Close()
 
-			Log("Waiting for clients "+port)
+			//Log("Waiting for clients "+port)
+			flag += 1
+
 			for {
 				conn, err := netListen.Accept()
 				if err != nil {
@@ -71,6 +74,9 @@ func main() {
 			}
 		}(v)
 	}
+	fmt.Println("Wait fo 3 Secends......")
+	time.Sleep(3*time.Second)
+	fmt.Println("Listened to "+ strconv.Itoa(flag) + " ports")
 	select{}
 }
 //处理连接
