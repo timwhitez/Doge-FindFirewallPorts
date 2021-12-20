@@ -5,11 +5,11 @@ Golang implementation of FindFirewallPorts
 
 ```
 Usage:
-        listen.exe 8080
-        listen.exe 8080-9000
-        listen.exe 8080,9000,9090
-        listen.exe 8080-9000,7000,7001
-        listen.exe 8080-9000,7000-7070
+        Doge-FindFirewallPorts.exe 8080
+        Doge-FindFirewallPorts.exe 8080-9000
+        Doge-FindFirewallPorts.exe 8080,9000,9090
+        Doge-FindFirewallPorts.exe 8080-9000,7000,7001
+        Doge-FindFirewallPorts.exe 8080-9000,7000-7070
 
 ```
 
