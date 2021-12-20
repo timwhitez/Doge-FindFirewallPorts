@@ -46,7 +46,7 @@ func main() {
 		ports = append(ports,":"+os.Args[1])
 	}
 
-	fmt.Println(ports)
+	//fmt.Println(ports)
 
 	for _,v := range ports{
 		go func(port string){
