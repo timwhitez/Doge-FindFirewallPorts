@@ -51,7 +51,7 @@ func main() {
 	for _,v := range ports{
 		go func(port string){
 			//建立socket，监听端口
-			netListen, err := net.Listen("tcp", "localhost"+port)
+			netListen, err := net.Listen("tcp", "0.0.0.0"+port)
 			if err != nil{
 				CheckError(err)
 				return
