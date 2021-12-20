@@ -12,11 +12,12 @@ import (
 
 func main() {
 	if len(os.Args) != 2{
-		fmt.Println("\nlisten.exe 8080\n")
-		fmt.Println("listen.exe 8080-9000\n")
-		fmt.Println("listen.exe 8080,9000,9090\n")
-		fmt.Println("listen.exe 8080-9000,7000,7001\n")
-		fmt.Println("listen.exe 8080-9000,7000-7070\n")
+		fmt.Println("\nUsage:")
+		fmt.Println("	listen.exe 8080")
+		fmt.Println("	listen.exe 8080-9000")
+		fmt.Println("	listen.exe 8080,9000,9090")
+		fmt.Println("	listen.exe 8080-9000,7000,7001")
+		fmt.Println("	listen.exe 8080-9000,7000-7070")
 		os.Exit(1)
 	}
 
