@@ -1,5 +1,7 @@
 # Doge-FindFirewallPorts
-Golang implementation of FindFirewallPorts by 清水川崎
+Golang implementation of FindFirewallPorts
+
+顺手写了golang的，不是很完善，监听的tcp端口
 
 ```
 Usage:
